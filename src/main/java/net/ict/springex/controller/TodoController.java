@@ -1,6 +1,7 @@
 package net.ict.springex.controller;
 
 import lombok.extern.log4j.Log4j2;
+import net.ict.springex.dto.TodoDTO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,10 +19,19 @@ public class TodoController {
         public void register(){
             log.info("todo register...........");
         }
+
+        //todo/register 를 POST방식 으로 처리하는 메소드 TodoDTO 를 파라미터로 적용
         @PostMapping("/register")
-        public void registerPost(){
+        public void registerPost(TodoDTO todoDTO){
               log.info("POST todo register ...........");
+              log.info(todoDTO);
+
+
         }
+
+
+
+
 
 
 }

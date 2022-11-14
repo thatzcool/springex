@@ -1,8 +1,6 @@
-package net.ict.springex.sample;
+package net.ict.springex.mapper;
 
 import lombok.extern.log4j.Log4j2;
-import net.ict.springex.mapper.TimeMapper;
-import net.ict.springex.mapper.TimeMapper2;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
