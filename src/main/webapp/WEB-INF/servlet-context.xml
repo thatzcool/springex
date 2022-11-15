@@ -20,10 +20,17 @@
          <property name="formatters">
              <set>
                  <bean class="net.ict.springex.controller.formatter.LocalDateFormatter"/>
+
+                 <bean class="net.ict.springex.controller.formatter.CheckBoxFormatter"/>
              </set>
          </property>
 
    </bean>
+
+
+
+
+
 
     <context:component-scan base-package="net.ict.springex.controller"/>
 </beans>
